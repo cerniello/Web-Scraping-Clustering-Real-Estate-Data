@@ -1,7 +1,7 @@
 # ADM - HW4 - Group33
 
 ##  Lohith Machani Sreennivasalu
-##  Michele Cernigliero
+##  Michele Cernigliaro
 ##  Paolo Gentile
 
 
