@@ -30,20 +30,16 @@ class FindDuplicates:
 
 
     '''
-    This second hash function is used for tackling the second part of the task. Instead of usic arithmetical operations, concatenating
-    the character values as strings assures that the position of each character is registered.
+    This second hash function is used for tackling the second part of the task.
+    We used radix notation over the passord to get key represented by a natural number.
     '''
     def hash_it2(self, item):
-        def hash_it2(item):
-        #base = str(1099511628211) + str(seed)
         
-        #for char in item:
-        #    n = self.wdict.get(char)
-        #    base = base + str(n)
         base = 0
-        for i in range(len(item)):
-            base += ord(item[i]) * 200**i
-        return base % 90000343
+        # radix notation
+        for i in range(len(self.item)):
+            base += ord(self.item[i]) * 200**i
+        return base
 
     '''
     The check() function will compute the hash_it() function over the password exactly 3 times with 
