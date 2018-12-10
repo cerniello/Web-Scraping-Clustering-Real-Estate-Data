@@ -3,10 +3,15 @@ import pandas as pd
 from os import path
 from PIL import Image
 import matplotlib.pyplot as plt
+import warnings
+
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
+warnings.filterwarnings('ignore')
 
 def jaccard_similarity(set1, set2):
     
+    # set the two lists, in order to mac
     set1 = set(set1)
     set2 = set(set2)
     
@@ -37,13 +42,12 @@ def compute_jaccard_similarities(features_clusters, TFIDF_clusters):
 
 
 def doWordcloud(text):
-    #text = " ".join(words for words in w)
     # Create stopword list:
     stopwords = set(STOPWORDS)
 
-    house_mask = np.array(Image.open("house.png"))
+    house_mask = np.array(Image.open("img/house.png"))
 
-
+    
     wc = WordCloud(background_color="white", max_words=500, mask=house_mask,
                    stopwords=stopwords, contour_width=3, contour_color='firebrick')
     # Generate a wordcloud
@@ -68,8 +72,6 @@ def setWordcloud (Jdf, lista_cluster1, lista_cluster2):
     for i in annunci:
         des += str(Jdf.iloc[i]['description'])
     
-    print(len(des))
-    print(des[:100])
     doWordcloud(des)
     
     return

@@ -4,6 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 import math
+import matplotlib.pyplot as plt
 
 # transform data
 
@@ -38,7 +39,7 @@ def elbow_method (data, max_clusters = 10, TFIDF = False, figsize=(12,8)):
     K_trials = range(2,max_clusters)
     
     for k in K_trials:
-        model = KMeans(n_clusters=k, init='k-means++')
+        model = KMeans(n_clusters = k, init='k-means++')
         model = model.fit(data)
         sd[k] = model.inertia_
         
@@ -232,8 +233,4 @@ def TFIDF_elbow_method_scenarios (TFIDF_dataframe):
     
 
     return
-
-
-
-
 
