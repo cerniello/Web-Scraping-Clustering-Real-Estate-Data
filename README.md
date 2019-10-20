@@ -4,7 +4,7 @@
 
 Hw structured in two parts:
 1) First part related on Unsupervised Learning (K-means application) related with house data scraped from interned
-2) Find password duplicates - **this part has been updated in a new repository by my colleague [paologentleman](https://github.com/paologentleman/Bloom-FIlter-Algorithm) **
+2) Find password duplicates - **this part has been updated in a new repository by my colleague paologentleman**, [here](https://github.com/paologentleman/Bloom-FIlter-Algorithm)
 
 ##  Lohith Machani Sreennivasalu
 ##  Michele Cernigliero
