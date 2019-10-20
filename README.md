@@ -1,9 +1,9 @@
-# Unsupervised_Learning
+# Clustering analysis of house announcements in Rome from Immobiliare.it
 
 4th homework for Alogithm of Data Minig @LaSapienza University
 
 Hw structured in two parts:
-1) First part related on Unsupervised Learning (K-means application) related with house data scraped from interned
+1) First part related to Unsupervised Learning (K-means application) from house data scraped from internet
 2) Find password duplicates - **this part has been updated in a new repository by my colleague paologentleman**, [here](https://github.com/paologentleman/Bloom-FIlter-Algorithm)
 
 ##  Lohith Machani Sreennivasalu
