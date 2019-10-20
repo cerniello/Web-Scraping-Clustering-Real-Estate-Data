@@ -1,4 +1,10 @@
-# ADM - HW4 - Group33
+# Unsupervised_Learning
+
+4th homework for Alogithm of Data Minig @LaSapienza University
+
+Hw structured in two parts:
+1) First part related on Unsupervised Learning (K-means application) related with house data scraped from interned
+2) Password  
 
 ##  Lohith Machani Sreennivasalu
 ##  Michele Cernigliero
